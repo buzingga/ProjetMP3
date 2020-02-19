@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nboisseau/VHDL/Projet_MP3/Design/cpt_1_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cpt_1_9
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nboisseau/VHDL/Projet_MP3/Simulation/tb_cpt_1_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_cpt_1_9
