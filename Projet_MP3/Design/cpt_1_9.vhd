@@ -4,18 +4,9 @@
 -- 
 -- Create Date: 19.02.2020 08:55:44
 -- Design Name: 
--- Module Name: Reg_Button - Behavioral
+-- Module Name: cpt_1_9 - Behavioral
 -- Project Name: ProjetMP3
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- Target Devices: Nexys4
 ----------------------------------------------------------------------------------
 
 
@@ -49,7 +40,7 @@ count : PROCESS (clock,reset) IS
 BEGIN 
   
   IF reset = '1' THEN
-    cnt <= "0000";
+    cnt <= "0101";
     output <= "0000";
   ELSIF clock'event AND clock = '1' THEN     -- rising clock edge
   

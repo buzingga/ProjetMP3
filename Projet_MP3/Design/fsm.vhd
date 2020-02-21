@@ -1,3 +1,14 @@
+----------------------------------------------------------------------------------
+-- Company: Enseirb-Matmeca
+-- Engineer: Aline Lam & Nicolas Boisseau
+-- 
+-- Create Date: 20.02.2020 13:20:50
+-- Design Name: 
+-- Module Name: fsm - Behavioral
+-- Project Name: ProjetMP3
+-- Target Devices: Nexys4
+
+----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -44,7 +55,7 @@ architecture milly of FSM is -- state machine to handle state,transition,output
                             next_state <= pause;
                        END IF;
       when pause => IF (B_LEFT = '1') THEN
-                            next_state <= play_bwd
+                            next_state <= play_bwd;
                     ELSIF (B_RIGHT = '1') THEN
                             next_state <= play_fwd;
                     ELSIF (B_CENTER = '1') THEN
