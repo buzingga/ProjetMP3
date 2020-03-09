@@ -47,13 +47,13 @@ BEGIN
     output <= (others => '0');
   ELSIF clock'event AND clock = '1' THEN     -- rising clock edge
     IF ce = '1' THEN 
-        IF incr = '1' THEN
+        IF incr = '1' and decr = '1'THEN
             IF cnt < 599 THEN 
                 cnt <= cnt + 1;
             ELSIF cnt = 599 THEN 
                 cnt <= (others => '0');
             END IF;
-        ELSIF decr = '1' THEN
+        ELSIF incr = '1' and decr = '0' THEN
             IF cnt > 0 THEN
                 cnt <= cnt - 1;
             ELSIF cnt = 0 THEN

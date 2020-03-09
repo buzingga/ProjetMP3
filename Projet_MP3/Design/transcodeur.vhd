@@ -134,7 +134,7 @@ begin
     seg_cod_2 <= "0111111"; --Affiche -
     seg_cod_3 <= "0111111"; --Affiche -
     seg_cod_4 <= "0111111"; --Affiche -
-    ELSIF(PLAY_PAUSE = '0' and RESTART = '1' and FORWARD = '0') THEN -- pause
+    ELSIF(PLAY_PAUSE = '0' and RESTART = '0' and FORWARD = '0') THEN -- pause
     seg_cod_1 <= "0111111"; --Affiche -
     seg_cod_2 <= "0111111"; --Affiche -
     seg_cod_3 <= "0111111"; --Affiche -

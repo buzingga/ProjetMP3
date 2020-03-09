@@ -50,9 +50,13 @@ architecture milly of FSM is -- state machine to handle state,transition,output
     case current_state IS
       when init => IF (B_CENTER = '1') THEN
                         next_state <= play_fwd;
+                   ELSE
+                        next_state <= init;
                    END IF;
       when play_fwd => IF (B_CENTER = '1') THEN
                             next_state <= pause;
+                       ELSE 
+                            next_state <= play_fwd;
                        END IF;
       when pause => IF (B_LEFT = '1') THEN
                             next_state <= play_bwd;
@@ -60,12 +64,18 @@ architecture milly of FSM is -- state machine to handle state,transition,output
                             next_state <= play_fwd;
                     ELSIF (B_CENTER = '1') THEN
                             next_state <= stoop;
+                    ELSE
+                            next_state <= pause;
                     END IF;
       when play_bwd => IF (B_CENTER = '1') THEN
                             next_state <= pause;
+                       ELSE
+                            next_state <= play_bwd;
                        END IF;
       when stoop => IF (B_CENTER = '1') THEN
                         next_state <= play_fwd;
+                    ELSE
+                        next_state <= stoop;
                     END IF;
       when others => NULL;
    end CASE;
