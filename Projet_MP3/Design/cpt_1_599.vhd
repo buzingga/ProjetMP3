@@ -42,18 +42,17 @@ count : PROCESS (clock,reset) IS
 BEGIN 
   
   IF reset = '1' THEN
-    cnt(10 downto 1) <= (others => '0');
-    cnt(0) <= '1';
+    cnt <= (others => '0');
     output <= (others => '0');
   ELSIF clock'event AND clock = '1' THEN     -- rising clock edge
     IF ce = '1' THEN 
-        IF incr = '1' and decr = '1'THEN
+        IF incr = '1' and decr = '1' THEN
             IF cnt < 599 THEN 
                 cnt <= cnt + 1;
             ELSIF cnt = 599 THEN 
                 cnt <= (others => '0');
             END IF;
-        ELSIF incr = '1' and decr = '0' THEN
+        ELSIF incr ='1' and decr = '0' THEN
             IF cnt > 0 THEN
                 cnt <= cnt - 1;
             ELSIF cnt = 0 THEN

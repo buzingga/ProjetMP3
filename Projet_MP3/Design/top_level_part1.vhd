@@ -29,7 +29,7 @@ end top_level_part1;
 
 architecture Behavioral of top_level_part1 is
 
-signal not_btnCpuReset : STD_LOGIC;
+signal rst : std_logic;
 signal BTN_PULSE_UP:std_logic;
 signal BTN_PULSE_DOWN:std_logic;
 signal BTN_PULSE_CENTER:std_logic;
@@ -141,47 +141,50 @@ end component;
 
 begin
 
-not_btnCpuReset <= not(btnCpuReset);
+rst<= not btnCpuReset;
 
 i_Reg_B_CENTER : Reg_Button
-Port map(clock=>clk,reset=>not_btnCpuReset,input=>btnC,output=>BTN_PULSE_CENTER);
+Port map(clock=>clk,reset=>rst,input=>btnC,output=>BTN_PULSE_CENTER);
 
 i_Reg_B_UP : Reg_Button
-Port map(clock=>clk,reset=>not_btnCpuReset,input=>btnU,output=>BTN_PULSE_UP);
+Port map(clock=>clk,reset=>rst,input=>btnU,output=>BTN_PULSE_UP);
 
 i_Reg_B_DOWN : Reg_Button
-Port map(clock=>clk,reset=>not_btnCpuReset,input=>btnD,output=>BTN_PULSE_DOWN);
+Port map(clock=>clk,reset=>rst,input=>btnD,output=>BTN_PULSE_DOWN);
 
 i_Reg_B_LEFT : Reg_Button
-Port map(clock=>clk,reset=>not_btnCpuReset,input=>btnL,output=>BTN_PULSE_LEFT);
+Port map(clock=>clk,reset=>rst,input=>btnL,output=>BTN_PULSE_LEFT);
 
 i_Reg_B_RIGHT : Reg_Button
-Port map(clock=>clk,reset=>not_btnCpuReset,input=>btnR,output=>BTN_PULSE_RIGHT);
+Port map(clock=>clk,reset=>rst,input=>btnR,output=>BTN_PULSE_RIGHT);
 
 i_gestion_freq :gestion_freq
-Port map(clock=>clk,reset=>not_btnCpuReset,CE_affichage=>ce_affichage,CE_perception=>ce_perception);
+Port map(clock=>clk,reset=>rst,CE_affichage=>ce_affichage,CE_perception=>ce_perception);
 
 i_FSM_MP3 : FSM
-Port map(clock=>clk,reset=>not_btnCpuReset,B_CENTER=>BTN_PULSE_CENTER,B_UP=>BTN_PULSE_UP,B_DOWN=>BTN_PULSE_DOWN,
+Port map(clock=>clk,reset=>rst,B_CENTER=>BTN_PULSE_CENTER,B_UP=>BTN_PULSE_UP,B_DOWN=>BTN_PULSE_DOWN,
 B_LEFT=>BTN_PULSE_LEFT,B_RIGHT=>BTN_PULSE_RIGHT,PLAY_PAUSE=>PLAY_PAUSE,RESTART=>RESTART,FORWARD=>FORWARD,
 VOLUME_UP=>VOLUME_UP,VOLUME_DOWN=>VOLUME_DOWN);
 
 i_cpt_1_9 :cpt_1_9
-Port map(clock=>clk,reset=>not_btnCpuReset,decr=>VOLUME_DOWN,incr=>VOLUME_UP,output=>volume);
+Port map(clock=>clk,reset=>rst,decr=>VOLUME_DOWN,incr=>VOLUME_UP,output=>volume);
 
 i_cpt_1_599 :cpt_1_599
-Port map(clock=>clk,ce=>ce_affichage,reset=>not_btnCpuReset,init=>RESTART,decr=>FORWARD,incr=>PLAY_PAUSE,output=>current_value);
+Port map(clock=>clk,ce=>ce_affichage,reset=>rst,init=>RESTART,decr=>FORWARD,incr=>PLAY_PAUSE,output=>current_value);
 
 i_transcodeur :transcodeur
 Port map(FORWARD=>FORWARD,PLAY_PAUSE=>PLAY_PAUSE,RESTART=>RESTART,volume=>volume,current_value=>current_value,
-seg_volume=>seg8,seg_value_1=>seg7,seg_value_2=>seg6,seg_value_3=>seg5,seg_cod_1=>seg4,seg_cod_2=>seg3,
-seg_cod_3=>seg2,seg_cod_4=>seg1);
+seg_volume=>seg1,seg_value_1=>seg2,seg_value_2=>seg3,seg_value_3=>seg4,seg_cod_1=>seg5,seg_cod_2=>seg6,
+seg_cod_3=>seg7,seg_cod_4=>seg8);
 
 i_mod8 :mod8
-Port map(clock=>clk,ce=>ce_perception,reset=>not_btnCpuReset,AN=>an,output=>cmd);
+Port map(clock=>clk,ce=>ce_perception,reset=>rst,AN=>an,output=>cmd);
 
 i_mux8 :mux8
-Port map(seg_1=>seg1,seg_2=>seg2,seg_3=>seg3,seg_4=>seg4,seg_5=>seg5,seg_6=>seg6,seg_7=>seg7,seg_8=>seg8,cmd=>cmd,
+Port map(seg_1=>seg8,seg_2=>seg7,seg_3=>seg6,seg_4=>seg5,seg_5=>seg4,seg_6=>seg3,seg_7=>seg2,seg_8=>seg1,cmd=>cmd,
 DP=>led0,SG=>seg);
 
 end Behavioral;
+
+
+

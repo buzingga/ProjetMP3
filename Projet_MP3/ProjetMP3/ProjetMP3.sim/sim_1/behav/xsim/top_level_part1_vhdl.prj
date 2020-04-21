@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Design/Reg_Button.vhd" \
+"../../../../../Design/cpt_1_599.vhd" \
+"../../../../../Design/cpt_1_9.vhd" \
+"../../../../../Design/fsm.vhd" \
+"../../../../../Design/gestion_freq.vhd" \
+"../../../../../Design/mod8.vhd" \
+"../../../../../Design/mux8.vhd" \
+"../../../../../Design/transcodeur.vhd" \
+"../../../../../Design/top_level_part1.vhd" \
+
+# Do not sort compile order
+nosort

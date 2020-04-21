@@ -44,7 +44,7 @@ end component;
       signal CE_affichage : STD_LOGIC;
       signal CE_perception : STD_LOGIC;
       
--- Clock period definitions
+   -- Clock period definitions
       constant clk_period : time := 10 ns;
 
 begin

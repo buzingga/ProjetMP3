@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gen_audio'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram'

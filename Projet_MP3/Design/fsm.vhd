@@ -55,7 +55,7 @@ architecture milly of FSM is -- state machine to handle state,transition,output
                    END IF;
       when play_fwd => IF (B_CENTER = '1') THEN
                             next_state <= pause;
-                       ELSE 
+                       ELSE
                             next_state <= play_fwd;
                        END IF;
       when pause => IF (B_LEFT = '1') THEN

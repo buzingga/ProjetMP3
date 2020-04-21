@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Design/cpt_timebase.vhd" \
+"../../../../../Simulation/tb_cpt_timebase.vhd" \
+
+# Do not sort compile order
+nosort

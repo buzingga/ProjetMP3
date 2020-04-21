@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Design/PWM.vhd" \
+"../../../../../Design/cpt_adresse.vhd" \
+"../../../../../Design/cpt_timebase.vhd" \
+"../../../../../Design/uart_recv.vhd" \
+"../../../../../Design/merger_8b_to_16b.vhd" \
+"../../../../../Design/stop_counter.vhd" \
+"../../../../../Design/full_uart_recv.vhd" \
+"../../../../../Design/ram.vhd" \
+"../../../../../Design/top_level_part2.vhd" \
+"../../../../../Simulation/tb_top_level_part2.vhd" \
+
+# Do not sort compile order
+nosort

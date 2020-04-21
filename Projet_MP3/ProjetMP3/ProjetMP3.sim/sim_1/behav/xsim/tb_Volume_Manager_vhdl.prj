@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Design/Volume_Manager.vhd" \
+"../../../../../Simulation/tb_Volume_Manager.vhd" \
+
+# Do not sort compile order
+nosort

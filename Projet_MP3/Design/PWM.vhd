@@ -21,7 +21,7 @@ entity PWM is
     Port ( clock : in STD_LOGIC;
            reset : in STD_LOGIC;
            ce : in STD_LOGIC;
-           idata : in STD_LOGIC_VECTOR(11 downto 0);
+           idata : in STD_LOGIC_VECTOR(10 downto 0);
            odata : out STD_LOGIC;
            audio : out STD_LOGIC);
 end PWM;
@@ -51,11 +51,10 @@ begin
 
     IF reset = '1' THEN
         cnt <= (others => '0');
-        audio <= '1';
     ELSIF clock'event AND clock = '1' THEN
             IF cnt < 2267 THEN
                 cnt <= cnt + 1;
-            ELSIF cnt = 2267 THEN
+            ELSE
                 cnt <= to_unsigned(0,12);
             END IF;
     END IF; 
@@ -72,5 +71,7 @@ begin
     END IF;
 
 end process comb;
+
+audio <= '1';
 
 end Behavioral;

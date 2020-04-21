@@ -31,20 +31,20 @@ architecture Behavioral of tb_top_level_part1 is
 
 component top_level_part1
     Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
+           btnCpuReset : in STD_LOGIC;
            btnU : in STD_LOGIC;
            btnC : in STD_LOGIC;
            btnD : in STD_LOGIC;
            btnL : in STD_LOGIC;
            btnR : in STD_LOGIC;
-           DP : out STD_LOGIC;
+           led0 : out STD_LOGIC;
            seg : out STD_LOGIC_VECTOR (6 downto 0);
            an : out STD_LOGIC_VECTOR (7 downto 0));          
 end component;
 
 -- inputs
         signal clk : STD_LOGIC := '0';
-        signal rst : STD_LOGIC := '0';
+        signal btnCpuReset : STD_LOGIC := '0';
         signal btnU : STD_LOGIC := '0';
         signal btnC : STD_LOGIC := '0';
         signal btnD : STD_LOGIC := '0';
@@ -52,7 +52,7 @@ end component;
         signal btnR : STD_LOGIC := '0';
    
 --outputs
-      signal DP : STD_LOGIC;
+      signal led0 : STD_LOGIC;
       signal seg : STD_LOGIC_VECTOR(6 downto 0);
       signal an : STD_LOGIC_VECTOR(7 downto 0);
       
@@ -60,15 +60,16 @@ end component;
       constant clk_period : time := 10 ns;
 
 begin
-    module: top_level_part1 PORT MAP (
+    module: top_level_part1 
+    PORT MAP (
               clk => clk,
-              rst => rst,
+              btnCpuReset => btnCpuReset,
               btnU => btnU,
               btnC => btnC,
               btnD => btnD,
               btnL => btnL,
               btnR => btnR,
-              DP => DP,
+              led0 => led0,
               seg => seg,
               an => an );
               
@@ -83,9 +84,9 @@ begin
            
     stim_proc: process
         begin  
-               rst <= '1';
+                btnCpuReset <= '1';
             wait for 100 ns;
-               rst <= '0';
+                btnCpuReset <= '0';
             wait for 100 ns; 
                 btnC <= '1';
             wait for 100 ns;

@@ -32,7 +32,7 @@ component PWM
     Port(   clock : in STD_LOGIC;
             reset : in STD_LOGIC;
             ce : in STD_LOGIC;
-            idata : in STD_LOGIC_VECTOR(11 downto 0);
+            idata : in STD_LOGIC_VECTOR(10 downto 0);
             odata : out STD_LOGIC;
             audio : out STD_LOGIC);
 end component;
@@ -40,7 +40,7 @@ end component;
    signal clock : STD_LOGIC := '0';
    signal reset : STD_LOGIC := '0';
    signal ce : STD_LOGIC := '0';
-   signal idata : STD_LOGIC_VECTOR(11 downto 0) := (others => '0');
+   signal idata : STD_LOGIC_VECTOR(10 downto 0) := (others => '0');
    signal odata : STD_LOGIC;
    signal audio : STD_LOGIC;
    
@@ -81,13 +81,13 @@ begin
                reset <= '1';
             wait for ce_period;
                reset <= '0';
-               idata <= std_logic_vector(to_signed(111,12));
+               idata <= std_logic_vector(to_signed(511,11));
             wait for ce_period;
-               idata <= std_logic_vector(to_signed(-1000,12));
+               idata <= std_logic_vector(to_signed(-1000,11));
             wait for ce_period;
-               idata <= std_logic_vector(to_signed(0,12));
+               idata <= std_logic_vector(to_signed(0,11));
             wait for ce_period;
-               idata <= std_logic_vector(to_signed(1000,12));
+               idata <= std_logic_vector(to_signed(1000,11));
             wait;
          end process;  
          

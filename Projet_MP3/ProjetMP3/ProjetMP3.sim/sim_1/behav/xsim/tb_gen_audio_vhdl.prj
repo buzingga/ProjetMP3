@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Design/PWM.vhd" \
+"../../../../../Design/cpt_adresse.vhd" \
+"../../../../../Design/cpt_timebase.vhd" \
+"../../../../../Design/gen_audio.vhd" \
+"../../../../../Design/ram.vhd" \
+"../../../../../Simulation/tb_gen_audio.vhd" \
+
+# Do not sort compile order
+nosort

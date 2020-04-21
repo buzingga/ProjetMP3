@@ -4,9 +4,18 @@
 -- 
 -- Create Date: 19.02.2020 08:55:44
 -- Design Name: 
--- Module Name: cpt_1_9 - Behavioral
+-- Module Name: Reg_Button - Behavioral
 -- Project Name: ProjetMP3
--- Target Devices: Nexys4
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
 ----------------------------------------------------------------------------------
 
 
@@ -41,12 +50,12 @@ BEGIN
   
   IF reset = '1' THEN
     cnt <= "0101";
-    output <= "0000";
+    output <= "0101";
   ELSIF clock'event AND clock = '1' THEN     -- rising clock edge
   
   IF incr = '1' AND cnt <9 THEN
     cnt <= cnt + 1;
-  ELSIF decr = '1' AND cnt > 0 THEN
+  ELSIF decr = '1' AND cnt > 1 THEN
     cnt <= cnt - 1;
   END IF;
   

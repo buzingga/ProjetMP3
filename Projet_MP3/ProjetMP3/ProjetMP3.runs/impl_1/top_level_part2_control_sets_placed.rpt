@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 21 11:54:56 2020
+| Host         : ASUS-NICO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_level_part2_control_sets_placed.rpt
+| Design       : top_level_part2
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            1 |
+|      8 |            3 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            7 |
+| No           | No                    | Yes                    |              25 |            7 |
+| No           | Yes                   | No                     |              14 |           10 |
+| Yes          | No                    | No                     |              34 |           15 |
+| Yes          | No                    | Yes                    |             338 |          151 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | btnCpuReset_IBUF                            | i_gen_audio/i_cpt_timebase/ce0              |                1 |              1 |
+|  clk_IBUF_BUFG | i_full_UART_recv/receiver/nbbits[3]_i_2_n_0 | i_full_UART_recv/receiver/nbbits[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG |                                             |                                             |                7 |              8 |
+|  clk_IBUF_BUFG | i_full_UART_recv/receiver/shift0            |                                             |                3 |              8 |
+|  clk_IBUF_BUFG | i_full_UART_recv/receiver/dat[7]_i_1_n_0    |                                             |                7 |              8 |
+|  clk_IBUF_BUFG | i_full_UART_recv/receiver/E[0]              | i_gen_audio/i_cpt_address/AR[0]             |               16 |             17 |
+|  clk_IBUF_BUFG | i_gen_audio/i_cpt_address/MAX0              |                                             |                5 |             18 |
+|  clk_IBUF_BUFG |                                             | i_gen_audio/i_cpt_address/AR[0]             |               17 |             39 |
+|  clk_IBUF_BUFG | i_gen_audio/i_cpt_timebase/E[0]             | i_gen_audio/i_cpt_address/AR[0]             |               20 |             47 |
+|  clk_IBUF_BUFG | i_gen_audio/i_cpt_timebase/cnt              | i_gen_audio/i_cpt_address/AR[0]             |               52 |            118 |
+|  clk_IBUF_BUFG | i_full_UART_recv/merger/READ_WRITE          | i_gen_audio/i_cpt_address/AR[0]             |               63 |            156 |
++----------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+
+
