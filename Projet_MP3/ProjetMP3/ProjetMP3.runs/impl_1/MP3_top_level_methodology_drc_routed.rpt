@@ -1,0 +1,428 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Apr 24 17:05:02 2020
+| Host         : ASUS-NICO running 64-bit major release  (build 9200)
+| Command      : report_methodology -file MP3_top_level_methodology_drc_routed.rpt -pb MP3_top_level_methodology_drc_routed.pb -rpx MP3_top_level_methodology_drc_routed.rpx
+| Design       : MP3_top_level
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 78
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 1          |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 19         |
+| TIMING-18 | Warning  | Missing input or output delay              | 23         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 35         |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell i_top_level_part1/i_FSM_MP3/seg_cod_1_reg[6]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_top_level_part1/i_transcodeur/seg_cod_1_reg[5]/CLR, i_top_level_part1/i_transcodeur/seg_cod_1_reg[6]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RsRx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btnC relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btnCpuReset relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btnD relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on btnL relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on btnR relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on btnU relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on ampPWM relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on an[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on an[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on an[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on an[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on an[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on an[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on an[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on an[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FORWARD_reg cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FORWARD_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[4] cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/FSM_onehot_next_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/PLAY_PAUSE_reg cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/PLAY_PAUSE_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/RESTART_reg cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/RESTART_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/VOLUME_DOWN_reg cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/VOLUME_DOWN_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_FSM_MP3/VOLUME_UP_reg cannot be properly analyzed as its control pin i_top_level_part1/i_FSM_MP3/VOLUME_UP_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_cod_1_reg[5] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_cod_1_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_cod_1_reg[6] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_cod_1_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_cod_4_reg[3]/L7 (in i_top_level_part1/i_transcodeur/seg_cod_4_reg[3] macro) cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_cod_4_reg[3]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_cod_4_reg[6]/L7 (in i_top_level_part1/i_transcodeur/seg_cod_4_reg[6] macro) cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_cod_4_reg[6]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[0] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[1] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[2] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[3] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[4] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[5] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_1_reg[6] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_1_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[0] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[1] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[2] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[3] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[4] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[5] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_value_2_reg[6] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_value_2_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[0] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[1] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[2] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[3] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[4] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[5] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch i_top_level_part1/i_transcodeur/seg_volume_reg[6] cannot be properly analyzed as its control pin i_top_level_part1/i_transcodeur/seg_volume_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+

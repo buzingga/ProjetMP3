@@ -1,0 +1,842 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 24 17:01:13 2020
+# Process ID: 11068
+# Current directory: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/synth_1
+# Command line: vivado.exe -log MP3_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MP3_top_level.tcl
+# Log file: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/synth_1/MP3_top_level.vds
+# Journal file: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MP3_top_level.tcl -notrace
+Command: synth_design -top MP3_top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18372 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 385.805 ; gain = 99.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MP3_top_level' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/MP3_top_level.vhd:35]
+INFO: [Synth 8-3491] module 'top_level_part1' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:17' bound to instance 'i_top_level_part1' of component 'top_level_part1' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/MP3_top_level.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'top_level_part1' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:33]
+INFO: [Synth 8-3491] module 'Reg_Button' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:34' bound to instance 'i_Reg_B_CENTER' of component 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Reg_Button' (1#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:42]
+INFO: [Synth 8-3491] module 'Reg_Button' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:34' bound to instance 'i_Reg_B_UP' of component 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:152]
+INFO: [Synth 8-3491] module 'Reg_Button' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:34' bound to instance 'i_Reg_B_DOWN' of component 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:155]
+INFO: [Synth 8-3491] module 'Reg_Button' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:34' bound to instance 'i_Reg_B_LEFT' of component 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:158]
+INFO: [Synth 8-3491] module 'Reg_Button' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Reg_Button.vhd:34' bound to instance 'i_Reg_B_RIGHT' of component 'Reg_Button' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:161]
+INFO: [Synth 8-3491] module 'gestion_freq' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gestion_freq.vhd:25' bound to instance 'i_gestion_freq' of component 'gestion_freq' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'gestion_freq' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gestion_freq.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'gestion_freq' (2#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gestion_freq.vhd:32]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:16' bound to instance 'i_FSM_MP3' of component 'FSM' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (3#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:31]
+INFO: [Synth 8-3491] module 'cpt_1_9' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_9.vhd:34' bound to instance 'i_cpt_1_9' of component 'cpt_1_9' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'cpt_1_9' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_9.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'cpt_1_9' (4#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_9.vhd:42]
+INFO: [Synth 8-3491] module 'cpt_1_599' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_599.vhd:25' bound to instance 'i_cpt_1_599' of component 'cpt_1_599' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'cpt_1_599' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_599.vhd:35]
+WARNING: [Synth 8-614] signal 'cnt' is read in the process but is not in the sensitivity list [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_599.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'cpt_1_599' (5#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_599.vhd:35]
+INFO: [Synth 8-3491] module 'transcodeur' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:17' bound to instance 'i_transcodeur' of component 'transcodeur' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'transcodeur' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'transcodeur' (6#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:33]
+INFO: [Synth 8-3491] module 'mod8' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mod8.vhd:17' bound to instance 'i_mod8' of component 'mod8' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'mod8' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mod8.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mod8.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'mod8' (7#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mod8.vhd:25]
+INFO: [Synth 8-3491] module 'mux8' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mux8.vhd:17' bound to instance 'i_mux8' of component 'mux8' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'mux8' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mux8.vhd:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mux8.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'mux8' (8#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/mux8.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'top_level_part1' (9#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part1.vhd:33]
+INFO: [Synth 8-3491] module 'top_level_part2' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part2.vhd:17' bound to instance 'i_top_level_part2' of component 'top_level_part2' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/MP3_top_level.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'top_level_part2' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part2.vhd:28]
+INFO: [Synth 8-3491] module 'gen_audio' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:34' bound to instance 'i_gen_audio' of component 'gen_audio' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part2.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'gen_audio' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:50]
+	Parameter BITS bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'cpt_timebase' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_timebase.vhd:25' bound to instance 'i_cpt_timebase' of component 'cpt_timebase' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cpt_timebase' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_timebase.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'cpt_timebase' (10#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_timebase.vhd:31]
+INFO: [Synth 8-3491] module 'cpt_address' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_adresse.vhd:25' bound to instance 'i_cpt_address' of component 'cpt_address' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'cpt_address' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_adresse.vhd:38]
+	Parameter BITS bound to: 18 - type: integer 
+WARNING: [Synth 8-614] signal 'cnt' is read in the process but is not in the sensitivity list [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_adresse.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'cpt_address' (11#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_adresse.vhd:38]
+INFO: [Synth 8-3491] module 'ram' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/ram.vhd:5' bound to instance 'i_ram' of component 'ram' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/ram.vhd:18]
+	Parameter BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram' (12#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/ram.vhd:18]
+INFO: [Synth 8-3491] module 'Volume_Manager' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Volume_Manager.vhd:17' bound to instance 'i_Volume_Manager' of component 'Volume_Manager' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'Volume_Manager' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Volume_Manager.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Volume_Manager' (13#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Volume_Manager.vhd:26]
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/PWM.vhd:20' bound to instance 'i_PWM' of component 'PWM' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/PWM.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'PWM' (14#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/PWM.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'gen_audio' (15#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/gen_audio.vhd:50]
+INFO: [Synth 8-3491] module 'full_UART_recv' declared at 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/full_uart_recv.vhd:27' bound to instance 'i_full_UART_recv' of component 'full_UART_recv' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part2.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'full_UART_recv' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/full_uart_recv.vhd:43]
+	Parameter RAM_ADDR_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'UART_recv' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/uart_recv.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'UART_recv' (16#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/uart_recv.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'merger_8b_to_16b' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/merger_8b_to_16b.vhd:20]
+	Parameter BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'merger_8b_to_16b' (17#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/merger_8b_to_16b.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'stop_counter' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/stop_counter.vhd:17]
+	Parameter BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stop_counter' (18#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/stop_counter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'full_UART_recv' (19#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/full_uart_recv.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'top_level_part2' (20#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/top_level_part2.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'MP3_top_level' (21#1) [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/MP3_top_level.vhd:35]
+WARNING: [Synth 8-3331] design ram has unconnected port DATA_IN[15]
+WARNING: [Synth 8-3331] design ram has unconnected port DATA_IN[14]
+WARNING: [Synth 8-3331] design ram has unconnected port DATA_IN[13]
+WARNING: [Synth 8-3331] design ram has unconnected port DATA_IN[12]
+WARNING: [Synth 8-3331] design ram has unconnected port DATA_IN[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 488.891 ; gain = 202.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 488.891 ; gain = 202.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 488.891 ; gain = 202.605
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Nexys4.xdc]
+Finished Parsing XDC File [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Nexys4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/Nexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MP3_top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MP3_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.211 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.211 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 799.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CE_perception" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CE_affichage" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/cpt_1_9.vhd:56]
+INFO: [Synth 8-5546] ROM "cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_recv'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nbbits" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nbbits" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'PLAY_PAUSE_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                            00001 |                              000
+                play_fwd |                            00010 |                              001
+                   pause |                            00100 |                              010
+                play_bwd |                            01000 |                              011
+                   stoop |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'RESTART_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 'FORWARD_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:90]
+WARNING: [Synth 8-327] inferring latch for variable 'VOLUME_UP_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 'VOLUME_DOWN_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/fsm.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_volume_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_value_1_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_value_2_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_value_3_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_cod_1_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:123]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_cod_2_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_cod_4_reg' [C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/Design/transcodeur.vhd:126]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                              000
+           zero_as_input |                              110 |                              001
+           wait_next_bit |                              100 |                              010
+              bit_sample |                              101 |                              011
+            bit_received |                              011 |                              100
+           wait_stop_bit |                              010 |                              101
+        last_bit_is_zero |                              000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_recv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 5     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	            2816K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 3     
+	   7 Input     10 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Reg_Button 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module gestion_freq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module cpt_1_9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cpt_1_599 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module transcodeur 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module mod8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module cpt_timebase 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module cpt_address 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 2     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 5     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---RAMs : 
+	            2816K Bit         RAMs := 1     
+Module Volume_Manager 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	  10 Input      1 Bit        Muxes := 1     
+Module PWM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module UART_recv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
+Module merger_8b_to_16b 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module stop_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "i_top_level_part1/i_gestion_freq/CE_affichage" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_top_level_part1/i_gestion_freq/CE_perception" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_top_level_part2/i_full_UART_recv/receiver/state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design MP3_top_level has port dp driven by constant 0
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__43' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__21' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__44' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__22' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__0' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__45' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__23' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__1' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__46' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__24' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__2' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__47' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__25' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__3' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__48' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__26' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__4' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__49' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__27' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__5' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__50' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__28' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__6' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__51' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__29' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__7' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__52' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__30' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__8' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__9'
+INFO: [Synth 8-3886] merging instance 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__53' (FDE) to 'i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__31'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[0]' (LDC) to 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[0]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[0]' (LDCP) to 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[1]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[1]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[1]' (LDCP) to 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\i_top_level_part1/i_transcodeur/seg_cod_1_reg[2] )
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[2]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[2]' (LDCP) to 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[3]' (LDC) to 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[3]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[4]' (LDC) to 'i_top_level_part1/i_transcodeur/seg_cod_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[4]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[4]' (LDP) to 'i_top_level_part1/i_transcodeur/seg_cod_4_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\i_top_level_part1/i_transcodeur/seg_cod_2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\i_top_level_part1/i_transcodeur/seg_cod_4_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_top_level_part1/i_transcodeur/seg_cod_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_top_level_part2/i_gen_audio/i_PWM/reg_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_cod_1_reg[2]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_cod_2_reg[6]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_cod_2_reg[5]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_cod_4_reg[5]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__10) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__11) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__12) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__13) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__14) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__15) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__16) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__17) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__18) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__19) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__20) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__32) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__33) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__34) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__35) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__36) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__37) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__38) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__39) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__40) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__41) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part2/i_gen_audio/i_ram/memory_reg_mux_sel__42) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[6]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[5]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[4]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[3]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[2]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[1]) is unused and will be removed from module MP3_top_level.
+WARNING: [Synth 8-3332] Sequential element (i_top_level_part1/i_transcodeur/seg_value_3_reg[0]) is unused and will be removed from module MP3_top_level.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|ram:        | memory_reg | 256 K x 11(READ_FIRST) | W |   | 256 K x 11(WRITE_FIRST) |   | R | Port A and B     | 0      | 88     | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 799.211 ; gain = 512.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|ram:        | memory_reg | 256 K x 11(READ_FIRST) | W |   | 256 K x 11(WRITE_FIRST) |   | R | Port A and B     | 0      | 88     | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_5_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_top_level_part2/i_gen_audio/i_ram/memory_reg_7_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_0_29 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_27 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_25 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_23 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [1] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [2] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [3] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [4] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [5] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [6] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [7] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [13] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [14] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/i_gen_audio/ADDRESS_OUT [15] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [1] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [2] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [4] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [5] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [6] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [8] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [9] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [10] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [11] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [12] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [13] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [14] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \i_top_level_part2/ADDRESS_IN [15] is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    52|
+|3     |LUT1       |    27|
+|4     |LUT2       |   236|
+|5     |LUT3       |   138|
+|6     |LUT4       |    83|
+|7     |LUT5       |    42|
+|8     |LUT6       |   261|
+|9     |RAMB36E1   |    44|
+|10    |RAMB36E1_1 |    44|
+|11    |FDCE       |   480|
+|12    |FDPE       |     5|
+|13    |FDRE       |    53|
+|14    |FDSE       |     4|
+|15    |LD         |    31|
+|16    |LDC        |     1|
+|17    |LDCP       |     2|
+|18    |LDP        |     1|
+|19    |IBUF       |     8|
+|20    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------+------+
+|      |Instance               |Module           |Cells |
++------+-----------------------+-----------------+------+
+|1     |top                    |                 |  1531|
+|2     |  i_top_level_part1    |top_level_part1  |   385|
+|3     |    i_FSM_MP3          |FSM              |    35|
+|4     |    i_Reg_B_CENTER     |Reg_Button       |     4|
+|5     |    i_Reg_B_DOWN       |Reg_Button_0     |     4|
+|6     |    i_Reg_B_LEFT       |Reg_Button_1     |     4|
+|7     |    i_Reg_B_RIGHT      |Reg_Button_2     |     4|
+|8     |    i_Reg_B_UP         |Reg_Button_3     |     4|
+|9     |    i_cpt_1_599        |cpt_1_599        |    84|
+|10    |    i_cpt_1_9          |cpt_1_9          |    31|
+|11    |    i_gestion_freq     |gestion_freq     |   104|
+|12    |    i_mod8             |mod8             |    18|
+|13    |    i_transcodeur      |transcodeur      |    93|
+|14    |  i_top_level_part2    |top_level_part2  |  1119|
+|15    |    i_full_UART_recv   |full_UART_recv   |   467|
+|16    |      counter          |stop_counter     |   361|
+|17    |      merger           |merger_8b_to_16b |    20|
+|18    |      receiver         |UART_recv        |    86|
+|19    |    i_gen_audio        |gen_audio        |   652|
+|20    |      i_PWM            |PWM              |    55|
+|21    |      i_Volume_Manager |Volume_Manager   |    12|
+|22    |      i_cpt_address    |cpt_address      |   430|
+|23    |      i_cpt_timebase   |cpt_timebase     |    34|
+|24    |      i_ram            |ram              |   121|
++------+-----------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 867.492 ; gain = 581.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 867.492 ; gain = 270.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 867.492 ; gain = 581.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  LD => LDCE: 31 instances
+  LDC => LDCE: 1 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 867.492 ; gain = 594.219
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.492 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/synth_1/MP3_top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MP3_top_level_utilization_synth.rpt -pb MP3_top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 17:02:16 2020...

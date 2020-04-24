@@ -30,6 +30,8 @@ entity cpt_address is
          CE : in STD_LOGIC;
          reset : in STD_LOGIC;
          DATA_IN : in STD_LOGIC_VECTOR(BITS-1 DOWNTO 0);
+         pause : in STD_LOGIC;
+         fw_bw : in STD_LOGIC;
          address : out STD_LOGIC_VECTOR(BITS-1 downto 0));
 end cpt_address;
 
@@ -60,14 +62,24 @@ BEGIN
                MAX<=flip;
                flip(BITS-1 downto 0) <= (others => '0');
                flip(BITS-1 downto 0) <= (others => '0');
-           END IF;
-        ELSIF cnt < MAX THEN
-           cnt <= cnt + 1;
-        ELSE
-           cnt <= (others => '0');
+            END IF;
+        ELSIF pause = '1' THEN
+            IF fw_bw = '1' THEN
+                IF cnt < MAX THEN
+                    cnt <= cnt + 1;
+                ELSE
+                    cnt <= (others => '0');
+                END IF;
+            ELSE
+                IF cnt > 0 THEN
+                    cnt <= cnt - 1;
+                ELSE
+                    cnt <= MAX;
+                END IF;
+            END IF;
         END IF;
     END IF;
-  END IF;
+ END IF;
   
 address <= std_logic_vector(cnt);
  

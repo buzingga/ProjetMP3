@@ -45,7 +45,7 @@ signal bascule : unsigned(1 downto 0);
 
 begin
 
-pulse : PROCESS (clock) IS
+pulse : PROCESS (clock,reset) IS
 BEGIN 
     IF reset = '1' THEN
         bascule <="00";

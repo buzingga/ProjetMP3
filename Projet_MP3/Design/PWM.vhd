@@ -38,28 +38,18 @@ begin
   
     IF reset = '1' THEN
         reg <= (others => '0');
+        cnt <= (others => '0');
     ELSIF clock'event AND clock = '1' THEN
-        IF ce = '1' THEN 
+        IF ce = '1' THEN
             reg <= unsigned(signed(idata) + to_signed(1024,12));
+        ELSIF cnt < 2267 THEN
+            cnt <= cnt + 1;
+        ELSE
+            cnt <= to_unsigned(0,12);
         END IF;
     END IF; 
 
 end process reg1;
-
-count : process (clock,reset)
-begin
-
-    IF reset = '1' THEN
-        cnt <= (others => '0');
-    ELSIF clock'event AND clock = '1' THEN
-            IF cnt < 2267 THEN
-                cnt <= cnt + 1;
-            ELSE
-                cnt <= to_unsigned(0,12);
-            END IF;
-    END IF; 
-
-end process count;
 
 comb : process (reg, cnt)
 begin

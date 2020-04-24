@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Apr 21 11:56:07 2020
-# Process ID: 16068
+# Start of session at: Fri Apr 24 17:02:24 2020
+# Process ID: 18340
 # Current directory: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/impl_1
-# Command line: vivado.exe -log top_level_part2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level_part2.tcl -notrace
-# Log file: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/impl_1/top_level_part2.vdi
+# Command line: vivado.exe -log MP3_top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MP3_top_level.tcl -notrace
+# Log file: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/impl_1/MP3_top_level.vdi
 # Journal file: C:/Users/Nico-Admin/Documents/ENSEIRB/Travail/S8/Projet_MP3/ProjetMP3/ProjetMP3.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source top_level_part2.tcl -notrace
+source MP3_top_level.tcl -notrace

@@ -38,6 +38,9 @@ entity gen_audio is
   Port ( clk : in STD_LOGIC;
          rst : in STD_LOGIC;
          READ_WRITE : in STD_LOGIC;
+         vol : in std_logic_vector(3 downto 0);
+         pause : in STD_LOGIC;
+         fw_bw : in STD_LOGIC;
          DATA_IN : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
          ADDRESS_IN : IN  STD_LOGIC_VECTOR(BITS-1 DOWNTO 0);
          odata : out STD_LOGIC;
@@ -51,7 +54,8 @@ CONSTANT RAM_ADDR_BITS : INTEGER := 18;
 
 signal ce : std_logic;
 signal ADDRESS_OUT : std_logic_vector(BITS-1 downto 0);
-signal DATA_OUT   : STD_LOGIC_VECTOR (10 DOWNTO 0);
+signal DATA_OUT_RAM   : STD_LOGIC_VECTOR (10 DOWNTO 0);
+signal DATA_OUT_VOL   : STD_LOGIC_VECTOR (10 DOWNTO 0);
 
 component cpt_timebase
  Port (  clock : in STD_LOGIC;
@@ -64,6 +68,8 @@ component cpt_address
          CE : in STD_LOGIC;
          reset : in STD_LOGIC;
          DATA_IN : in STD_LOGIC_VECTOR(BITS-1 DOWNTO 0);
+         pause : in STD_LOGIC;
+         fw_bw : in STD_LOGIC;
          address : out STD_LOGIC_VECTOR(BITS-1 downto 0));
 end component;
 
@@ -86,18 +92,30 @@ component ram
            audio : out STD_LOGIC);
 end component;
 
+component Volume_Manager
+  Port ( clock : in std_logic;
+         reset : in std_logic;
+         ce : in std_logic;
+         idata : in std_logic_vector(10 downto 0);
+         switch : in std_logic_vector(3 downto 0);
+         odata : out std_logic_vector(10 downto 0));
+end component;
+
 begin
 
 i_cpt_timebase : cpt_timebase
 Port map(clock=>clk,reset=>rst,ce=>ce);
 
 i_cpt_address : cpt_address
-Port map(clock=>clk,CE=>ce,reset=>rst,DATA_IN=>ADDRESS_IN,address=>ADDRESS_OUT);
+Port map(clock=>clk,CE=>ce,reset=>rst,DATA_IN=>ADDRESS_IN,pause=>pause,fw_bw=>fw_bw,address=>ADDRESS_OUT);
 
 i_ram : ram
-Port map(CLOCK=>clk,ADDR_R=>ADDRESS_OUT,ADDR_W=>ADDRESS_IN,READ_WRITE=>READ_WRITE,DATA_IN=>DATA_IN,DATA_OUT=>DATA_OUT);
+Port map(CLOCK=>clk,ADDR_R=>ADDRESS_OUT,ADDR_W=>ADDRESS_IN,READ_WRITE=>READ_WRITE,DATA_IN=>DATA_IN,DATA_OUT=>DATA_OUT_RAM);
+
+i_Volume_Manager : Volume_Manager
+Port map(clock=>clk,reset=>rst,ce=>ce,idata=>DATA_OUT_RAM,switch=>vol,odata=>DATA_OUT_VOL);
 
 i_PWM : PWM
-Port map(clock=>clk,reset=>rst,ce=>ce,idata=>DATA_OUT,odata=>odata,audio=>audio);
+Port map(clock=>clk,reset=>rst,ce=>ce,idata=>DATA_OUT_VOL,odata=>odata,audio=>audio);
 
 end Behavioral;

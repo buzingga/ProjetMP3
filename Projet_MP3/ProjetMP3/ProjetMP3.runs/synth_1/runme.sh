@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log top_level_part2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_part2.tcl
+EAStep vivado -log MP3_top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MP3_top_level.tcl

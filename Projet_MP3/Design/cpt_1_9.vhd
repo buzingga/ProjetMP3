@@ -41,7 +41,7 @@ end cpt_1_9;
 
 architecture Behavioral of cpt_1_9 is
 
-signal cnt :unsigned (3 downto 0) := "0000";
+signal cnt :unsigned (3 downto 0) := "0101";
 
 begin
 

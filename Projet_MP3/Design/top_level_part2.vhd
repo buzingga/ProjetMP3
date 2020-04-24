@@ -18,6 +18,9 @@ entity top_level_part2 is
   Port ( clk : in STD_LOGIC;
          btnCpuReset : in STD_LOGIC;
          RsRx : in STD_LOGIC;
+         vol : in STD_LOGIC_VECTOR(3 downto 0);
+         fw_bw : in STD_LOGIC;
+         pause : in STD_LOGIC;
          ampPWM : out STD_LOGIC;
          ampSD : out STD_LOGIC);
 end top_level_part2;
@@ -29,6 +32,7 @@ CONSTANT RAM_ADDR_BITS : INTEGER := 18;
 
 signal rst : std_logic;
 signal ce : std_logic;
+signal audio : std_logic;
 signal ADDRESS_OUT : std_logic_vector(BITS-1 downto 0);
 signal ADDRESS_IN : std_logic_vector(BITS-1 downto 0);
 signal DATA_IN   : STD_LOGIC_VECTOR (15 DOWNTO 0);
@@ -39,6 +43,9 @@ component gen_audio
  Port (  clk : in STD_LOGIC;
          rst : in STD_LOGIC;
          READ_WRITE : in STD_LOGIC;
+         vol : in std_logic_vector(3 downto 0);
+         pause : in STD_LOGIC;
+         fw_bw : in STD_LOGIC;
          DATA_IN : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
          ADDRESS_IN : IN  STD_LOGIC_VECTOR(BITS-1 DOWNTO 0);
          odata : out STD_LOGIC;
@@ -59,9 +66,12 @@ begin
 rst<= not btnCpuReset;
 
 i_gen_audio : gen_audio
-Port map(clk=>clk,rst=>rst,READ_WRITE=>READ_WRITE,DATA_IN=>DATA_IN,ADDRESS_IN=>ADDRESS_IN,odata=>ampPWM,audio=>ampSD);
+Port map(clk=>clk,rst=>rst,READ_WRITE=>READ_WRITE,DATA_IN=>DATA_IN,ADDRESS_IN=>ADDRESS_IN,vol=>vol,pause=>pause,fw_bw=>fw_bw,odata=>ampPWM,audio=>audio);
 
 i_full_UART_recv : full_UART_recv
 Port map(clk_100MHz=>clk,reset=>rst,rx=>RsRx,memory_addr=>ADDRESS_IN,data_value=>DATA_IN,memory_wen=>READ_WRITE);
+
+
+ampSD <= (audio and pause);
 
 end Behavioral;

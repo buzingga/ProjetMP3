@@ -33,7 +33,7 @@ begin
     volume_manager : process (clock,reset) is
     begin
     IF reset = '1' THEN
-        odata<=std_logic_vector(to_signed(0,11));
+        data<=to_signed(0,11);
     ELSIF clock'event AND clock = '1' THEN     -- rising clock edge
         IF ce = '1' THEN
             CASE (switch) IS
@@ -47,9 +47,11 @@ begin
                 WHEN "1000" => data<= resize(signed(idata(10 downto 1)),11);
                 WHEN "1001" => data<= signed(idata);
                 WHEN OTHERS => NULL;
-             END CASE;
+           END CASE;
         END IF;
     END IF;
     end process volume_manager;
+   
+    odata<=std_logic_vector(data);
 
 end Behavioral;

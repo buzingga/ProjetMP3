@@ -22,7 +22,10 @@ entity top_level_part1 is
            btnD : in STD_LOGIC;
            btnL : in STD_LOGIC;
            btnR : in STD_LOGIC;
-           led0 : out STD_LOGIC;
+           dp : out STD_LOGIC;
+           pause : out STD_LOGIC;
+           fw_bw : out STD_LOGIC;
+           vol : out STD_LOGIC_VECTOR (3 downto 0);
            seg : out STD_LOGIC_VECTOR (6 downto 0);
            an : out STD_LOGIC_VECTOR (7 downto 0));
 end top_level_part1;
@@ -182,9 +185,11 @@ Port map(clock=>clk,ce=>ce_perception,reset=>rst,AN=>an,output=>cmd);
 
 i_mux8 :mux8
 Port map(seg_1=>seg8,seg_2=>seg7,seg_3=>seg6,seg_4=>seg5,seg_5=>seg4,seg_6=>seg3,seg_7=>seg2,seg_8=>seg1,cmd=>cmd,
-DP=>led0,SG=>seg);
+DP=>dp,SG=>seg);
+
+pause<=PLAY_PAUSE;
+fw_bw<=FORWARD;
+vol<=volume;
 
 end Behavioral;
-
-
 
